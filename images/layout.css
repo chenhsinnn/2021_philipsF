@@ -1,0 +1,71 @@
+@charset "big5";
+/* CSS Document */
+
+/*基本*/
+body { 
+  margin:0; 
+  padding:0;
+}
+
+
+/*控制區塊背景的位置*/
+.area2000{ margin-left:-390px;}
+.area2000 .bg01{
+	z-index:0; position:absolute; top:0px; left:0; width:100%; min-width:1220px;}
+
+
+/*區塊_all*/
+.area { position: relative; margin:0 auto; padding:0; border-radius:0; text-align:center; }
+.area a { display:block;}
+.area .go_bt {
+  -webkit-transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-ms-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;}
+.area .go_bt:hover {
+  -webkit-transform:scale(0.95);
+     -moz-transform:scale(0.95);
+      -ms-transform:scale(0.95);
+       -o-transform:scale(0.95);
+          transform:scale(0.95);}
+.area1220 { margin:0 auto; width:1220px;}
+.area960 { margin:0 auto; width:960px;}
+	@media screen and (max-width:767px){
+		.area1220 { width:100%;}
+		.area960 { width:100%;}
+		/*區塊_切割*/
+		.area_1bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_1bn a { float:left; margin:0 0 2% 0; padding:0; width:100%; list-style: none;}
+		.area_2bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_2bn a { float:left; margin:0 1% 2%; padding:0; width:48%; list-style: none;}
+		.area_3bn { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_3bn a { float:left; margin:0 1% 2% ; padding:0; width:31.3%; list-style: none;}
+		.area_1bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_1bn_nopadding a { float:left; margin:0; padding:0; width:100%; list-style: none;}
+		.area_2bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_2bn_nopadding a { float:left; margin:0; padding:0; width:50%; list-style: none;}
+		.area_3bn_nopadding { margin: 0 auto; padding:0; overflow:hidden;}
+		.area_3bn_nopadding a { float:left; margin:0; padding:0; width:33.3%; list-style: none;}
+	}
+
+
+/*版頭*/
+.area_top {}
+.area_top .momologo { z-index:999; position: absolute;top: 15px; left:40px;}
+.area_top .momologo a { display:block; width:200px; height:30px; background: url(momo_logo.png) no-repeat;}
+.area_top .momologo a:hover{ background: url(momo_logo_on.png) no-repeat;}
+.area_top .title { z-index:2; position: absolute;top:0px; left:0px;}
+	@media screen and (max-width:767px){
+		.area_top { height: auto;}
+		.area_top .momologo { display:none}
+	}
+
+
+/*隱鑶*/
+.for_pc {}
+.for_phone { display:none !important;}
+	@media screen and (max-width:767px){
+		.for_pc { display:none !important;}
+		.for_phone { display: inherit !important;}
+	}
